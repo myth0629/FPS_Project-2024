@@ -398,7 +398,7 @@
 "Assets/External Assets/Easy FPS/Scripts/GunScript.cs"
 "Assets/External Assets/Easy FPS/Scripts/MouseLookScript.cs"
 "Assets/External Assets/Easy FPS/Scripts/PlayerMovementScript.cs"
-"Assets/External Assets/Monsters Pack Volume 2/Muscomorph/Prefabs/MonsterController.cs"
+"Assets/MonsterController.cs"
 -langversion:9.0
 
 /deterministic

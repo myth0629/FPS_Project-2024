@@ -1140,6 +1140,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Muscomorph_LEGACY 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1650609838498677253, guid: 0bf7d7236a2144b639ca0802d1ee1fb8, type: 3}
+      propertyPath: m_TagString
+      value: Dummie
+      objectReference: {fileID: 0}
     - target: {fileID: 8222001746641403291, guid: 0bf7d7236a2144b639ca0802d1ee1fb8, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -1220,10 +1224,10 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 1
   m_Speed: 3.5
-  m_Acceleration: 8
+  m_Acceleration: 120
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -1293,7 +1297,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ca21240b27a744ed8868883472685d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1623159115}
+  player: {fileID: 1623159115}
+  attackRange: 3
+  attackRate: 1
+  attackDamage: 10
 --- !u!1 &1878376354
 GameObject:
   m_ObjectHideFlags: 0
