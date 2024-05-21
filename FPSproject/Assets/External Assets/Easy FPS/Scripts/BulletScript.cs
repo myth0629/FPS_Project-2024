@@ -15,6 +15,11 @@ public class BulletScript : MonoBehaviour {
 	[Tooltip("Put Weapon layer and Player layer to ignore bullet raycast.")]
 	public LayerMask ignoreLayer;
 
+	// 추가 사항 (데미지 판정)
+	public int attackDamage = 10;
+	public LayerMask enemyLayer;
+	public Transform attackPoint;
+
 	/*
 	* Uppon bullet creation with this script attatched,
 	* bullet creates a raycast which searches for corresponding tags.
@@ -23,14 +28,19 @@ public class BulletScript : MonoBehaviour {
 	void Update () {
 
 		if(Physics.Raycast(transform.position, transform.forward,out hit, maxDistance, ~ignoreLayer)){
-			if(decalHitWall){
+			if(decalHitWall){ // 벽에 맞았을때
 				if(hit.transform.tag == "LevelPart"){
 					Instantiate(decalHitWall, hit.point + hit.normal * floatInfrontOfWall, Quaternion.LookRotation(hit.normal));
 					Destroy(gameObject);
 				}
-				if(hit.transform.tag == "Dummie"){
+				if(hit.transform.tag == "Dummie"){ // 더미에 맞았을때
 					Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
 					Destroy(gameObject);
+					MonsterController enemyHealth = hit.transform.GetComponent<MonsterController>();
+					if(enemyHealth != null)
+					{
+						enemyHealth.TakeDamage(attackDamage);
+					}
 				}
 			}		
 			Destroy(gameObject);

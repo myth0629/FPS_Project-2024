@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 11440490}
   m_Layer: 2
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,4 +126,9 @@ MonoBehaviour:
   bloodEffect: {fileID: 1013274939826982, guid: ffbf169ab9dcfdc45ae14010bc82a6b2, type: 3}
   ignoreLayer:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 0
+  attackDamage: 10
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  attackPoint: {fileID: 0}
