@@ -10,7 +10,7 @@ public class MonsterController : MonoBehaviour
     public Transform player; // 플레이어 오브젝트
     public float attackRange = 2f;
     public float attackRate = 1f;
-    public int attackDamage = 10;
+    public int attackDamage = 20;
     private float nextAttackTime = 0f;
 
     NavMeshAgent nmAgent;
@@ -55,6 +55,7 @@ public class MonsterController : MonoBehaviour
         Debug.Log("Attacked!");
         anim.SetBool("isCrawl", false);
         anim.SetBool("isAttack", true);
+        
     }
 
     void OnDrawGizmosSelected() {

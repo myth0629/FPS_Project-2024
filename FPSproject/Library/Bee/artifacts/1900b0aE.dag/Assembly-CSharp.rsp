@@ -396,6 +396,7 @@
 "Assets/External Assets/Easy FPS/Scripts/GunInventory.cs"
 "Assets/External Assets/Easy FPS/Scripts/GunScript.cs"
 "Assets/External Assets/Easy FPS/Scripts/MouseLookScript.cs"
+"Assets/External Assets/Easy FPS/Scripts/PlayerHealth.cs"
 "Assets/External Assets/Easy FPS/Scripts/PlayerMovementScript.cs"
 "Assets/MonsterController.cs"
 "Assets/MonsterController_Fly.cs"
