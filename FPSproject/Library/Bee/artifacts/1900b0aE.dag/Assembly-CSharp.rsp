@@ -394,6 +394,7 @@
 "Assets/External Assets/Easy FPS/Scripts/MouseLookScript.cs"
 "Assets/External Assets/Easy FPS/Scripts/PlayerHealth.cs"
 "Assets/External Assets/Easy FPS/Scripts/PlayerMovementScript.cs"
+"Assets/External Assets/Zombie/Zombie.cs"
 "Assets/MonsterController.cs"
 "Assets/MonsterController_Fly.cs"
 -langversion:9.0
