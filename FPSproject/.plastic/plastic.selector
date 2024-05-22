@@ -1,0 +1,4 @@
+repository "FPSproject@CAN24@cloud"
+  path "/"
+    br "/main"
+    co "/main"
