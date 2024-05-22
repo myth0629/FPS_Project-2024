@@ -55,7 +55,6 @@ public class MonsterController : MonoBehaviour
         Debug.Log("Attacked!");
         anim.SetBool("isCrawl", false);
         anim.SetBool("isAttack", true);
-        
     }
 
     void OnDrawGizmosSelected() {
