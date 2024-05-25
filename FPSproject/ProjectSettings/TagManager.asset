@@ -9,11 +9,14 @@ TagManager:
   - SecondCamera
   - BulletSpawn
   - Bullet
+  - Zombie
+  - Bug
+  - BugFly
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
