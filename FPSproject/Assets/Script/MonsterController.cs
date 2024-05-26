@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,7 @@ public class MonsterController : MonoBehaviour
     public int attackDamage = 10;
     private float nextAttackTime = 0f;
     public LayerMask playerLayer;
+    public event Action OnDeath;
 
     NavMeshAgent nmAgent;
     Animator anim;
@@ -103,7 +105,11 @@ public class MonsterController : MonoBehaviour
         Invoke("Destroy", 2f);
     }
 
-    void Destroy(){
+    public void Destroy(){
+        if (OnDeath != null)
+        {
+            OnDeath.Invoke();
+        }
         Destroy(gameObject);
     }
 }
