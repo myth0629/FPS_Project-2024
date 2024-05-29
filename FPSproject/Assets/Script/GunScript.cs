@@ -20,11 +20,11 @@ public class GunScript : MonoBehaviour {
 
 	[Header("Bullet properties")]
 	[Tooltip("Preset value to tell with how many bullets will our waepon spawn aside.")]
-	public float bulletsIHave = 20;
+	public float bulletsIHave = 0;
 	[Tooltip("Preset value to tell with how much bullets will our waepon spawn inside rifle.")]
-	public float bulletsInTheGun = 5;
+	public float bulletsInTheGun = 30;
 	[Tooltip("Preset value to tell how much bullets can one magazine carry.")]
-	public float amountOfBulletsPerLoad = 5;
+	public float amountOfBulletsPerLoad = 30;
 
 	private Transform player;
 	private Camera cameraComponent;

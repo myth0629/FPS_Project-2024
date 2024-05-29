@@ -2301,6 +2301,8 @@ GameObject:
   m_Component:
   - component: {fileID: 456086}
   - component: {fileID: 11405670}
+  - component: {fileID: 7943280251021043997}
+  - component: {fileID: -6578270396553551833}
   m_Layer: 8
   m_Name: NewGun_auto
   m_TagString: Weapon
@@ -2317,7 +2319,7 @@ Transform:
   m_GameObject: {fileID: 167390}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.47, y: 2.3, z: -22.53}
+  m_LocalPosition: {x: 18.597, y: 2.3, z: -22.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2343,9 +2345,9 @@ MonoBehaviour:
   mls: {fileID: 0}
   walkingSpeed: 3
   runningSpeed: 5
-  bulletsIHave: 9999
-  bulletsInTheGun: 80
-  amountOfBulletsPerLoad: 80
+  bulletsIHave: 0
+  bulletsInTheGun: 30
+  amountOfBulletsPerLoad: 30
   currentGunPosition: {x: 0, y: 0, z: 0}
   restPlacePosition: {x: -0.07, y: -0.06, z: 0.42}
   aimPlacePosition: {x: 0, y: -0.03, z: 0.3}
@@ -2408,6 +2410,56 @@ MonoBehaviour:
   reloadAnimationName: Player_Reload
   aimingAnimationName: Player_AImpose
   meeleAnimationName: Character_Malee
+--- !u!54 &7943280251021043997
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167390}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!136 &-6578270396553551833
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167390}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.8
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &170420
 GameObject:
   m_ObjectHideFlags: 0

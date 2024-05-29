@@ -20,8 +20,6 @@ public class SpawnItems : MonoBehaviour
 
     private void SpawnRandomItem()
     {
-            Debug.Log("SpawnRandomItem 호출됨");
-
         // 랜덤으로 아이템을 선택하여 생성합니다.
         GameObject itemPrefab = Random.Range(0, 2) == 0 ? healthItemPrefab : ammoItemPrefab;
         if (itemPrefab != null)
